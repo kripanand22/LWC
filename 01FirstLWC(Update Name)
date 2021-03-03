@@ -1,0 +1,30 @@
+//The name will be updated when the input field will be change
+
+
+//Html
+<template>
+    
+    <lightning-card title='my first Lwc component'>
+        <p class="slds-p-around_small">
+            <lightning-input label="Write your Name" value={name} onchange={updateName}></lightning-input>
+            <br/>
+
+            Hello {name} ! Welcome to first LWC Component
+
+        </p>s
+    </lightning-card>
+
+</template>
+
+//JS
+
+import { LightningElement } from 'lwc';
+
+export default class FirstLwcComponent extends LightningElement {
+    name='Kripanand';
+
+    updateName(event){
+        // console.log(event.target.value);
+        this.name = event.target.value;
+    }
+}
