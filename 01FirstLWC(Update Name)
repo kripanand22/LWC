@@ -11,7 +11,7 @@
 
             Hello {name} ! Welcome to first LWC Component
 
-        </p>s
+        </p>
     </lightning-card>
 
 </template>
@@ -21,7 +21,7 @@
 import { LightningElement } from 'lwc';
 
 export default class FirstLwcComponent extends LightningElement {
-    name='Kripanand';
+    name='';
 
     updateName(event){
         // console.log(event.target.value);
